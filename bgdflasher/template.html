@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="{{html_lang}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}">
+    <meta name="keywords" content="{{keywords}}">
+    <meta property="og:title" content="{{og_title}}">
+    <meta property="og:description" content="{{og_description}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{canonical}}">
+    <meta property="og:image" content="https://sokoly.uk/bgdflasher/01_dashboard.png">
+    <link rel="canonical" href="{{canonical}}">
+{{hreflang}}
+    <link rel="stylesheet" href="{{css_href}}">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "BGD Flasher",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "{{description}}",
+        "inLanguage": "{{html_lang}}",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Daniil Sokolyuk" }
+    }
+    </script>
+</head>
+<body>
+    <header class="sticky-header" id="sticky-header">
+        <a href="{{prefix}}." class="logo"><img src="{{prefix}}icon.png" alt="BGD Flasher icon"><span>BGD</span> Flasher</a>
+        <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" class="dl-btn" target="_blank" rel="noopener">{{download}}</a>
+    </header>
+
+    <div class="hero">
+        <h1><span>BGD</span> Flasher</h1>
+        <p class="subtitle">{{subtitle}}</p>
+        <div class="badge badge-row" id="hero-badges">
+            <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" target="_blank" rel="noopener">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+            </a>
+            <a href="https://pub-b561f867dd6a4482922aeebeb254af5c.r2.dev/BegodeFlasher-1.2.0.apk" class="apk-btn" download>
+                <svg viewBox="0 0 24 24"><path d="M17.523 2.226l1.39 2.409a.5.5 0 01-.866.5l-1.42-2.46A7.587 7.587 0 0012 1.5c-1.726 0-3.326.576-4.627 1.175L5.953 5.135a.5.5 0 01-.866-.5l1.39-2.409C3.637 3.848 1.5 6.932 1.5 10.5h21c0-3.568-2.137-6.652-4.977-8.274zM7.5 8a1 1 0 110-2 1 1 0 010 2zm9 0a1 1 0 110-2 1 1 0 010 2zM1.5 11.5v7A3.5 3.5 0 005 22h14a3.5 3.5 0 003.5-3.5v-7h-21z"/></svg>
+                Android APK
+            </a>
+        </div>
+        <div class="hero-screenshots">
+            <img src="{{prefix}}01_dashboard.png" alt="BGD Flasher dashboard" loading="lazy">
+            <img src="{{prefix}}02_telemetry.png" alt="BGD Flasher telemetry" loading="lazy">
+            <img src="{{prefix}}04_bms_cells.png" alt="BGD Flasher BMS" loading="lazy">
+        </div>
+    </div>
+
+    <section>
+        <h2>{{features_title}}</h2>
+        <p class="section-sub">{{features_sub}}</p>
+        <div class="features">
+            <div class="feature-card"><div class="icon">&#9889;</div><h3>{{f1_title}}</h3><p>{{f1_desc}}</p></div>
+            <div class="feature-card"><div class="icon">&#128267;</div><h3>{{f2_title}}</h3><p>{{f2_desc}}</p></div>
+            <div class="feature-card"><div class="icon">&#128338;</div><h3>{{f3_title}}</h3><p>{{f3_desc}}</p></div>
+            <div class="feature-card"><div class="icon">&#128190;</div><h3>{{f4_title}}</h3><p>{{f4_desc}}</p></div>
+            <div class="feature-card"><div class="icon">&#9881;</div><h3>{{f5_title}}</h3><p>{{f5_desc}}</p></div>
+            <div class="feature-card"><div class="icon">&#128274;</div><h3>{{f6_title}}</h3><p>{{f6_desc}}</p></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>{{action_title}}</h2>
+        <p class="section-sub">{{action_sub}}</p>
+        <div style="display:flex;justify-content:center;margin-bottom:3em;">
+            <video autoplay muted loop playsinline style="height:580px;border-radius:24px;box-shadow:0 16px 48px rgba(0,0,0,0.4);">
+                <source src="{{prefix}}preview.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="showcase">
+            <div class="showcase-item"><img src="{{prefix}}01_dashboard.png" loading="lazy"><p>{{s1}}</p></div>
+            <div class="showcase-item"><img src="{{prefix}}02_telemetry.png" loading="lazy"><p>{{s2}}</p></div>
+            <div class="showcase-item"><img src="{{prefix}}03_telemetry_grid.png" loading="lazy"><p>{{s3}}</p></div>
+            <div class="showcase-item"><img src="{{prefix}}04_bms_cells.png" loading="lazy"><p>{{s4}}</p></div>
+            <div class="showcase-item"><img src="{{prefix}}05_firmware_flash.png" loading="lazy"><p>{{s5}}</p></div>
+            <div class="showcase-item"><img src="{{prefix}}06_settings.png" loading="lazy"><p>{{s6}}</p></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>{{compat_title}}</h2>
+        <p class="section-sub">{{compat_sub}}</p>
+        <div class="compat-grid">
+            <div class="compat-card"><h3>Begode / Gotway</h3><p>{{c1}}</p></div>
+            <div class="compat-card"><h3>ExtremeBull</h3><p>{{c2}}</p></div>
+            <div class="compat-card"><h3>Freestyl3r</h3><p>{{c3}}</p></div>
+            <div class="compat-card"><h3>SV / Alexovik</h3><p>{{c4}}</p></div>
+        </div>
+    </section>
+
+    <div class="cta">
+        <h2>{{cta_title}}</h2>
+        <p>{{cta_sub}}</p>
+        <div class="badge badge-row">
+            <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" target="_blank" rel="noopener">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+            </a>
+            <a href="https://pub-b561f867dd6a4482922aeebeb254af5c.r2.dev/BegodeFlasher-1.2.0.apk" class="apk-btn" download>
+                <svg viewBox="0 0 24 24"><path d="M17.523 2.226l1.39 2.409a.5.5 0 01-.866.5l-1.42-2.46A7.587 7.587 0 0012 1.5c-1.726 0-3.326.576-4.627 1.175L5.953 5.135a.5.5 0 01-.866-.5l1.39-2.409C3.637 3.848 1.5 6.932 1.5 10.5h21c0-3.568-2.137-6.652-4.977-8.274zM7.5 8a1 1 0 110-2 1 1 0 010 2zm9 0a1 1 0 110-2 1 1 0 010 2zM1.5 11.5v7A3.5 3.5 0 005 22h14a3.5 3.5 0 003.5-3.5v-7h-21z"/></svg>
+                Android APK
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Daniil Sokolyuk &nbsp;|&nbsp; <a href="{{prefix}}privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="{{prefix}}support">Support</a></p>
+    </footer>
+
+    <script>
+    const header = document.getElementById('sticky-header');
+    const badges = document.getElementById('hero-badges');
+    new IntersectionObserver(([e]) => {
+        header.classList.toggle('visible', !e.isIntersecting);
+    }, { threshold: 0 }).observe(badges);
+    </script>
+</body>
+</html>

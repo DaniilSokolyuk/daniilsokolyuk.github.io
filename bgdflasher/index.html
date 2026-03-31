@@ -12,68 +12,45 @@
     <meta property="og:url" content="https://sokoly.uk/bgdflasher">
     <meta property="og:image" content="https://sokoly.uk/bgdflasher/01_dashboard.png">
     <link rel="canonical" href="https://sokoly.uk/bgdflasher">
-    <!-- hreflang for international SEO -->
     <link rel="alternate" hreflang="en" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="ru" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="de" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="fr" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="es" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="pt" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="zh" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="ja" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="ko" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="it" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="pl" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="tr" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="nl" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="th" href="https://sokoly.uk/bgdflasher">
-    <link rel="alternate" hreflang="vi" href="https://sokoly.uk/bgdflasher">
+    <link rel="alternate" hreflang="ru" href="https://sokoly.uk/bgdflasher/ru">
+    <link rel="alternate" hreflang="de" href="https://sokoly.uk/bgdflasher/de">
+    <link rel="alternate" hreflang="fr" href="https://sokoly.uk/bgdflasher/fr">
+    <link rel="alternate" hreflang="es" href="https://sokoly.uk/bgdflasher/es">
+    <link rel="alternate" hreflang="pt" href="https://sokoly.uk/bgdflasher/pt">
+    <link rel="alternate" hreflang="zh" href="https://sokoly.uk/bgdflasher/zh">
+    <link rel="alternate" hreflang="ja" href="https://sokoly.uk/bgdflasher/ja">
+    <link rel="alternate" hreflang="ko" href="https://sokoly.uk/bgdflasher/ko">
+    <link rel="alternate" hreflang="it" href="https://sokoly.uk/bgdflasher/it">
+    <link rel="alternate" hreflang="tr" href="https://sokoly.uk/bgdflasher/tr">
     <link rel="alternate" hreflang="x-default" href="https://sokoly.uk/bgdflasher">
-    <!-- Multilingual SEO meta -->
-    <meta name="description" lang="ru" content="Прошивка, телеметрия и настройки для моноколёс Begode, Gotway и SV. Бесплатное приложение для iOS и Android.">
-    <meta name="description" lang="de" content="Firmware flashen, Echtzeit-Telemetrie und Einstellungen für Begode, Gotway & SV Einräder. Kostenlose App.">
-    <meta name="description" lang="fr" content="Flasher le firmware, surveiller la télémétrie en temps réel et configurer votre monoroue Begode, Gotway ou SV.">
-    <meta name="description" lang="es" content="Flashea firmware, monitorea telemetría en tiempo real y configura tu monociclo eléctrico Begode, Gotway o SV.">
-    <meta name="description" lang="pt" content="Flash de firmware, telemetria em tempo real e configurações para monociclos Begode, Gotway e SV.">
-    <meta name="description" lang="zh" content="Begode、Gotway、SV电动独轮车固件刷写、实时遥测和设置管理工具。免费应用。">
-    <meta name="description" lang="ja" content="Begode・Gotway・SV電動一輪車のファームウェア更新、リアルタイムテレメトリ、設定管理アプリ。無料。">
-    <meta name="description" lang="ko" content="Begode, Gotway, SV 전동 외발자전거 펌웨어 플래싱, 실시간 텔레메트리 및 설정 관리 앱.">
     <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "MobileApplication",
         "name": "BGD Flasher",
-        "operatingSystem": "iOS",
+        "operatingSystem": "iOS, Android",
         "applicationCategory": "UtilitiesApplication",
-        "description": "Firmware flashing, real-time telemetry, and settings management for Begode, Gotway, and SV electric unicycles.",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "Daniil Sokolyuk"
-        }
+        "description": "Flash firmware, monitor real-time telemetry, adjust settings, and track BMS cell data on your Begode, Gotway, or SV electric unicycle. Free iOS app.",
+        "inLanguage": "en",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Daniil Sokolyuk" }
     }
     </script>
 </head>
 <body>
-
-    <!-- Sticky Header -->
-    <header class="sticky-header">
-        <div class="logo"><span>BGD</span> Flasher</div>
+    <header class="sticky-header" id="sticky-header">
+        <a href="." class="logo"><img src="icon.png" alt="BGD Flasher icon"><span>BGD</span> Flasher</a>
         <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" class="dl-btn" target="_blank" rel="noopener">Download</a>
     </header>
 
-    <!-- Hero -->
     <div class="hero">
         <h1><span>BGD</span> Flasher</h1>
         <p class="subtitle">Firmware flashing, real-time telemetry, and full settings control for Begode, Gotway & SV electric unicycles.</p>
-        <div class="badge badge-row">
+        <div class="badge badge-row" id="hero-badges">
             <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" target="_blank" rel="noopener">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
             </a>
             <a href="https://pub-b561f867dd6a4482922aeebeb254af5c.r2.dev/BegodeFlasher-1.2.0.apk" class="apk-btn" download>
                 <svg viewBox="0 0 24 24"><path d="M17.523 2.226l1.39 2.409a.5.5 0 01-.866.5l-1.42-2.46A7.587 7.587 0 0012 1.5c-1.726 0-3.326.576-4.627 1.175L5.953 5.135a.5.5 0 01-.866-.5l1.39-2.409C3.637 3.848 1.5 6.932 1.5 10.5h21c0-3.568-2.137-6.652-4.977-8.274zM7.5 8a1 1 0 110-2 1 1 0 010 2zm9 0a1 1 0 110-2 1 1 0 010 2zM1.5 11.5v7A3.5 3.5 0 005 22h14a3.5 3.5 0 003.5-3.5v-7h-21z"/></svg>
@@ -81,51 +58,25 @@
             </a>
         </div>
         <div class="hero-screenshots">
-            <img src="01_dashboard.png" alt="BGD Flasher race dashboard with speed and PWM gauges" loading="lazy">
-            <img src="02_telemetry.png" alt="Real-time EUC telemetry monitoring" loading="lazy">
-            <img src="04_bms_cells.png" alt="Dual BMS cell voltage monitoring" loading="lazy">
+            <img src="01_dashboard.png" alt="BGD Flasher dashboard" loading="lazy">
+            <img src="02_telemetry.png" alt="BGD Flasher telemetry" loading="lazy">
+            <img src="04_bms_cells.png" alt="BGD Flasher BMS" loading="lazy">
         </div>
     </div>
 
-    <!-- Features -->
     <section>
         <h2>Everything your wheel needs</h2>
         <p class="section-sub">Monitor, configure, and update your electric unicycle from a single app.</p>
         <div class="features">
-            <div class="feature-card">
-                <div class="icon">&#9889;</div>
-                <h3>Real-Time Telemetry</h3>
-                <p>Live speed, voltage, current, power, PWM, temperature, trip distance, and session statistics — all streamed over Bluetooth in real time.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">&#128267;</div>
-                <h3>Dual BMS Monitoring</h3>
-                <p>Per-cell voltage for up to 48 cells across two battery packs. Track min/max/average, temperature sensors, and detect cell imbalance early.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">&#128338;</div>
-                <h3>Race Dashboard</h3>
-                <p>Fullscreen speed and PWM gauges with dynamic color warnings. Track top speed and max PWM in immersive portrait or landscape mode.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">&#128190;</div>
-                <h3>Firmware Flashing</h3>
-                <p>Browse the firmware catalog or load custom files. YMODEM protocol with CRC16 verification and MD5 hash validation for safe transfers.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">&#9881;</div>
-                <h3>Wheel Settings</h3>
-                <p>Ride mode, speed limiter, alarms, LED mode, beeper volume, roll angle, gyroscope calibration — adjust everything over Bluetooth.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">&#128274;</div>
-                <h3>Private & Ad-Free</h3>
-                <p>No accounts, no analytics, no ads, no tracking. All data stays on your device. Open community-driven development.</p>
-            </div>
+            <div class="feature-card"><div class="icon">&#9889;</div><h3>Real-Time Telemetry</h3><p>Live speed, voltage, current, power, PWM, temperature, trip distance, and session statistics — all streamed over Bluetooth in real time.</p></div>
+            <div class="feature-card"><div class="icon">&#128267;</div><h3>Dual BMS Monitoring</h3><p>Per-cell voltage for up to 48 cells across two battery packs. Track min/max/average, temperature sensors, and detect cell imbalance early.</p></div>
+            <div class="feature-card"><div class="icon">&#128338;</div><h3>Race Dashboard</h3><p>Fullscreen speed and PWM gauges with dynamic color warnings. Track top speed and max PWM in immersive portrait or landscape mode.</p></div>
+            <div class="feature-card"><div class="icon">&#128190;</div><h3>Firmware Flashing</h3><p>Browse the firmware catalog or load custom files. YMODEM protocol with CRC16 verification and MD5 hash validation for safe transfers.</p></div>
+            <div class="feature-card"><div class="icon">&#9881;</div><h3>Wheel Settings</h3><p>Ride mode, speed limiter, alarms, LED mode, beeper volume, roll angle, gyroscope calibration — adjust everything over Bluetooth.</p></div>
+            <div class="feature-card"><div class="icon">&#128274;</div><h3>Private & Ad-Free</h3><p>No accounts, no analytics, no ads, no tracking. All data stays on your device. Open community-driven development.</p></div>
         </div>
     </section>
 
-    <!-- Video + Screenshots -->
     <section>
         <h2>See it in action</h2>
         <p class="section-sub">Designed for riders who want full control over their wheel.</p>
@@ -135,64 +86,32 @@
             </video>
         </div>
         <div class="showcase">
-            <div class="showcase-item">
-                <img src="01_dashboard.png" alt="Fullscreen race dashboard for Begode electric unicycle" loading="lazy">
-                <p>Race Dashboard</p>
-            </div>
-            <div class="showcase-item">
-                <img src="02_telemetry.png" alt="Real-time telemetry data from Begode Gotway wheel" loading="lazy">
-                <p>Live Telemetry</p>
-            </div>
-            <div class="showcase-item">
-                <img src="03_telemetry_grid.png" alt="Telemetry grid view with speed voltage power metrics" loading="lazy">
-                <p>Metrics Grid</p>
-            </div>
-            <div class="showcase-item">
-                <img src="04_bms_cells.png" alt="Dual BMS cell voltage monitor for electric unicycle battery" loading="lazy">
-                <p>BMS Cell Monitor</p>
-            </div>
-            <div class="showcase-item">
-                <img src="05_firmware_flash.png" alt="Firmware flashing interface for Begode Gotway EUC" loading="lazy">
-                <p>Flash Firmware</p>
-            </div>
-            <div class="showcase-item">
-                <img src="06_settings.png" alt="Wheel settings configuration for Begode electric unicycle" loading="lazy">
-                <p>Wheel Settings</p>
-            </div>
+            <div class="showcase-item"><img src="01_dashboard.png" loading="lazy"><p>Race Dashboard</p></div>
+            <div class="showcase-item"><img src="02_telemetry.png" loading="lazy"><p>Live Telemetry</p></div>
+            <div class="showcase-item"><img src="03_telemetry_grid.png" loading="lazy"><p>Metrics Grid</p></div>
+            <div class="showcase-item"><img src="04_bms_cells.png" loading="lazy"><p>BMS Cell Monitor</p></div>
+            <div class="showcase-item"><img src="05_firmware_flash.png" loading="lazy"><p>Flash Firmware</p></div>
+            <div class="showcase-item"><img src="06_settings.png" loading="lazy"><p>Wheel Settings</p></div>
         </div>
     </section>
 
-    <!-- Compatibility -->
     <section>
         <h2>Supported wheels</h2>
         <p class="section-sub">Works with all Begode/Gotway BLE-compatible electric unicycles.</p>
         <div class="compat-grid">
-            <div class="compat-card">
-                <h3>Begode / Gotway</h3>
-                <p>Stock firmware</p>
-            </div>
-            <div class="compat-card">
-                <h3>ExtremeBull</h3>
-                <p>JN firmware</p>
-            </div>
-            <div class="compat-card">
-                <h3>Freestyl3r</h3>
-                <p>CF custom firmware</p>
-            </div>
-            <div class="compat-card">
-                <h3>SV / Alexovik</h3>
-                <p>BF firmware with advanced BMS</p>
-            </div>
+            <div class="compat-card"><h3>Begode / Gotway</h3><p>Stock firmware</p></div>
+            <div class="compat-card"><h3>ExtremeBull</h3><p>JN firmware</p></div>
+            <div class="compat-card"><h3>Freestyl3r</h3><p>CF custom firmware</p></div>
+            <div class="compat-card"><h3>SV / Alexovik</h3><p>BF firmware with advanced BMS</p></div>
         </div>
     </section>
 
-    <!-- CTA -->
     <div class="cta">
         <h2>Ready to ride?</h2>
         <p>Download BGD Flasher for free.</p>
         <div class="badge badge-row">
             <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" target="_blank" rel="noopener">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
             </a>
             <a href="https://pub-b561f867dd6a4482922aeebeb254af5c.r2.dev/BegodeFlasher-1.2.0.apk" class="apk-btn" download>
                 <svg viewBox="0 0 24 24"><path d="M17.523 2.226l1.39 2.409a.5.5 0 01-.866.5l-1.42-2.46A7.587 7.587 0 0012 1.5c-1.726 0-3.326.576-4.627 1.175L5.953 5.135a.5.5 0 01-.866-.5l1.39-2.409C3.637 3.848 1.5 6.932 1.5 10.5h21c0-3.568-2.137-6.652-4.977-8.274zM7.5 8a1 1 0 110-2 1 1 0 010 2zm9 0a1 1 0 110-2 1 1 0 010 2zM1.5 11.5v7A3.5 3.5 0 005 22h14a3.5 3.5 0 003.5-3.5v-7h-21z"/></svg>
@@ -201,10 +120,16 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Daniil Sokolyuk &nbsp;|&nbsp; <a href="privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="support">Support</a></p>
     </footer>
 
+    <script>
+    const header = document.getElementById('sticky-header');
+    const badges = document.getElementById('hero-badges');
+    new IntersectionObserver(([e]) => {
+        header.classList.toggle('visible', !e.isIntersecting);
+    }, { threshold: 0 }).observe(badges);
+    </script>
 </body>
 </html>

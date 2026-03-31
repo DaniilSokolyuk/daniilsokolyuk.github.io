@@ -9,7 +9,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 80px 20px 60px;
+            padding: 60px 20px;
             background: radial-gradient(ellipse at 50% 0%, #1a1030 0%, #0a0a0a 70%);
         }
         .hero h1 {
@@ -42,7 +42,7 @@
         .badge { margin-top: 2em; }
         .badge img { height: 54px; }
 
-        /* Sticky header */
+        /* Sticky header — hidden by default, shown when scrolled past badges */
         .sticky-header {
             position: fixed;
             top: 0;
@@ -57,10 +57,23 @@
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(255,255,255,0.06);
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
         }
+        .sticky-header.visible { transform: translateY(0); }
         .sticky-header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-size: 1.2em;
             font-weight: 700;
+            text-decoration: none;
+            color: #f0f0f0;
+        }
+        .sticky-header .logo img {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
         }
         .sticky-header .logo span { color: #b388ff; }
         .sticky-header .dl-btn {
