@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGD Flasher — Begode・Gotway・SV電動一輪車のファームウェア＆テレメトリアプリ</title>
+    <meta name="description" content="ファームウェア更新、リアルタイムテレメトリ、設定管理、BMSセルデータをBegode、Gotway、SV電動一輪車で。無料アプリ。">
+    <meta name="keywords" content="begode, gotway, euc, 電動一輪車, ファームウェア, テレメトリ, bms, ダッシュボード, 速度, バッテリー, sv, extremebull">
+    <meta property="og:title" content="BGD Flasher — EUCテレメトリ＆ファームウェアツール">
+    <meta property="og:description" content="ファームウェアの書き込み、リアルタイムテレメトリの監視、Begode・Gotway・SV電動一輪車の設定。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sokoly.uk/bgdflasher/ja">
+    <meta property="og:image" content="https://sokoly.uk/bgdflasher/01_dashboard.png">
+    <link rel="canonical" href="https://sokoly.uk/bgdflasher/ja">
+    <link rel="alternate" hreflang="ru" href="https://sokoly.uk/bgdflasher/ru">
+    <link rel="alternate" hreflang="de" href="https://sokoly.uk/bgdflasher/de">
+    <link rel="alternate" hreflang="fr" href="https://sokoly.uk/bgdflasher/fr">
+    <link rel="alternate" hreflang="es" href="https://sokoly.uk/bgdflasher/es">
+    <link rel="alternate" hreflang="pt" href="https://sokoly.uk/bgdflasher/pt">
+    <link rel="alternate" hreflang="zh" href="https://sokoly.uk/bgdflasher/zh">
+    <link rel="alternate" hreflang="ja" href="https://sokoly.uk/bgdflasher/ja">
+    <link rel="alternate" hreflang="ko" href="https://sokoly.uk/bgdflasher/ko">
+    <link rel="alternate" hreflang="it" href="https://sokoly.uk/bgdflasher/it">
+    <link rel="alternate" hreflang="tr" href="https://sokoly.uk/bgdflasher/tr">
+    <link rel="alternate" hreflang="en" href="https://sokoly.uk/bgdflasher">
+    <link rel="alternate" hreflang="x-default" href="https://sokoly.uk/bgdflasher">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "BGD Flasher",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "ファームウェア更新、リアルタイムテレメトリ、設定管理、BMSセルデータをBegode、Gotway、SV電動一輪車で。無料アプリ。",
+        "inLanguage": "ja",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Daniil Sokolyuk" }
+    }
+    </script>
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo"><span>BGD</span> Flasher</div>
+        <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" class="dl-btn" target="_blank" rel="noopener">ダウンロード</a>
+    </header>
+    <div class="hero">
+        <h1><span>BGD</span> Flasher</h1>
+        <p class="subtitle">ファームウェア書き込み、リアルタイムテレメトリ、Begode・Gotway・SV電動一輪車の完全な設定制御。</p>
+        <div class="badge badge-row">
+            <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" target="_blank" rel="noopener">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+            </a>
+            <a href="https://pub-b561f867dd6a4482922aeebeb254af5c.r2.dev/BegodeFlasher-1.2.0.apk" class="apk-btn" download><svg viewBox="0 0 24 24"><path d="M17.523 2.226l1.39 2.409a.5.5 0 01-.866.5l-1.42-2.46A7.587 7.587 0 0012 1.5c-1.726 0-3.326.576-4.627 1.175L5.953 5.135a.5.5 0 01-.866-.5l1.39-2.409C3.637 3.848 1.5 6.932 1.5 10.5h21c0-3.568-2.137-6.652-4.977-8.274zM7.5 8a1 1 0 110-2 1 1 0 010 2zm9 0a1 1 0 110-2 1 1 0 010 2zM1.5 11.5v7A3.5 3.5 0 005 22h14a3.5 3.5 0 003.5-3.5v-7h-21z"/></svg> Android APK</a>
+        </div>
+        <div class="hero-screenshots">
+            <img src="../01_dashboard.png" alt="BGD Flasher dashboard" loading="lazy">
+            <img src="../02_telemetry.png" alt="BGD Flasher telemetry" loading="lazy">
+            <img src="../04_bms_cells.png" alt="BGD Flasher BMS" loading="lazy">
+        </div>
+    </div>
+    <section>
+        <h2>ホイールに必要なすべて</h2>
+        <p class="section-sub">1つのアプリから電動一輪車を監視、設定、更新。</p>
+        <div class="features">
+            <div class="feature-card"><div class="icon">&#9889;</div><h3>リアルタイムテレメトリ</h3><p>速度、電圧、電流、電力、PWM、温度、走行距離、セッション統計—すべてBluetoothでリアルタイムに。</p></div>
+            <div class="feature-card"><div class="icon">&#128267;</div><h3>デュアルBMS監視</h3><p>2つのバッテリーパックで最大48セルのセル電圧。最小/最大/平均、温度センサー、セル不均衡の早期検出。</p></div>
+            <div class="feature-card"><div class="icon">&#128338;</div><h3>レースダッシュボード</h3><p>フルスクリーンの速度計とPWMゲージ、動的なカラー警告付き。最高速度と最大PWMをトラッキング。</p></div>
+            <div class="feature-card"><div class="icon">&#128190;</div><h3>ファームウェア書き込み</h3><p>カタログを閲覧するか独自ファイルを読み込み。CRC16検証とMD5ハッシュ検証付きYMODEMプロトコル。</p></div>
+            <div class="feature-card"><div class="icon">&#9881;</div><h3>ホイール設定</h3><p>走行モード、速度リミッター、アラーム、LED、ビーパー音量、傾斜角、ジャイロ校正—すべてBluetooth経由。</p></div>
+            <div class="feature-card"><div class="icon">&#128274;</div><h3>プライベート＆広告なし</h3><p>アカウント不要、分析なし、広告なし、トラッキングなし。すべてのデータはデバイス上に保持。</p></div>
+        </div>
+    </section>
+    <section>
+        <h2>動作を見る</h2>
+        <p class="section-sub">ホイールの完全なコントロールを求めるライダーのために設計。</p>
+        <div style="display:flex;justify-content:center;margin-bottom:3em;">
+            <video autoplay muted loop playsinline style="height:580px;border-radius:24px;box-shadow:0 16px 48px rgba(0,0,0,0.4);">
+                <source src="../preview.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="showcase">
+            <div class="showcase-item"><img src="../01_dashboard.png" loading="lazy"><p>レースダッシュボード</p></div>
+            <div class="showcase-item"><img src="../02_telemetry.png" loading="lazy"><p>ライブテレメトリ</p></div>
+            <div class="showcase-item"><img src="../03_telemetry_grid.png" loading="lazy"><p>メトリクスグリッド</p></div>
+            <div class="showcase-item"><img src="../04_bms_cells.png" loading="lazy"><p>BMSモニター</p></div>
+            <div class="showcase-item"><img src="../05_firmware_flash.png" loading="lazy"><p>ファームウェア書き込み</p></div>
+            <div class="showcase-item"><img src="../06_settings.png" loading="lazy"><p>設定</p></div>
+        </div>
+    </section>
+    <section>
+        <h2>対応ホイール</h2>
+        <p class="section-sub">すべてのBLE対応Begode/Gotway電動一輪車に対応。</p>
+        <div class="compat-grid">
+            <div class="compat-card"><h3>Begode / Gotway</h3><p>ストックファームウェア</p></div>
+            <div class="compat-card"><h3>ExtremeBull</h3><p>JNファームウェア</p></div>
+            <div class="compat-card"><h3>Freestyl3r</h3><p>CFカスタムファームウェア</p></div>
+            <div class="compat-card"><h3>SV / Alexovik</h3><p>BFファームウェア（BMS付き）</p></div>
+        </div>
+    </section>
+    <div class="cta">
+        <h2>走る準備は？</h2>
+        <p>BGD Flasherを無料でダウンロード。</p>
+        <div class="badge badge-row">
+            <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" target="_blank" rel="noopener">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+            </a>
+            <a href="https://pub-b561f867dd6a4482922aeebeb254af5c.r2.dev/BegodeFlasher-1.2.0.apk" class="apk-btn" download><svg viewBox="0 0 24 24"><path d="M17.523 2.226l1.39 2.409a.5.5 0 01-.866.5l-1.42-2.46A7.587 7.587 0 0012 1.5c-1.726 0-3.326.576-4.627 1.175L5.953 5.135a.5.5 0 01-.866-.5l1.39-2.409C3.637 3.848 1.5 6.932 1.5 10.5h21c0-3.568-2.137-6.652-4.977-8.274zM7.5 8a1 1 0 110-2 1 1 0 010 2zm9 0a1 1 0 110-2 1 1 0 010 2zM1.5 11.5v7A3.5 3.5 0 005 22h14a3.5 3.5 0 003.5-3.5v-7h-21z"/></svg> Android APK</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Daniil Sokolyuk &nbsp;|&nbsp; <a href="../privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="../support">Support</a></p>
+    </footer>
+</body>
+</html>
