@@ -3,28 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
     <title>{{title}}</title>
     <meta name="description" content="{{description}}">
     <meta name="keywords" content="{{keywords}}">
-    <meta property="og:title" content="{{og_title}}">
-    <meta property="og:description" content="{{og_description}}">
+    <meta name="author" content="Daniil Sokolyuk">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="{{canonical}}">
+
+    <!-- Language alternates -->
+{{hreflang}}
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{canonical}}">
-    <meta property="og:image" content="https://sokoly.uk/bgdflasher/01_dashboard.png">
-    <link rel="canonical" href="{{canonical}}">
-{{hreflang}}
+    <meta property="og:title" content="{{og_title}}">
+    <meta property="og:description" content="{{og_description}}">
+    <meta property="og:image" content="https://sokoly.uk/bgdflasher/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="BGD Flasher — EUC telemetry and firmware app">
+    <meta property="og:site_name" content="BGD Flasher">
+    <meta property="og:locale" content="{{og_locale}}">
+{{og_locale_alternates}}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{canonical}}">
+    <meta name="twitter:title" content="{{og_title}}">
+    <meta name="twitter:description" content="{{og_description}}">
+    <meta name="twitter:image" content="https://sokoly.uk/bgdflasher/og-image.png">
+    <meta name="twitter:image:alt" content="BGD Flasher app interface">
+
+    <!-- Apple specific -->
+    <meta name="apple-mobile-web-app-title" content="BGD Flasher">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{prefix}}favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{prefix}}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{prefix}}favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{prefix}}favicon-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{prefix}}apple-touch-icon.png">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://apps.apple.com">
+    <link rel="dns-prefetch" href="https://apps.apple.com">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="{{css_href}}">
+
+    <!-- Schema.org — Software Application -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "MobileApplication",
+        "@type": "SoftwareApplication",
         "name": "BGD Flasher",
-        "operatingSystem": "iOS, Android",
-        "applicationCategory": "UtilitiesApplication",
+        "alternateName": ["Begode Flasher", "BGD Flasher EUC", "Gotway Flasher"],
         "description": "{{description}}",
-        "inLanguage": "{{html_lang}}",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "author": { "@type": "Person", "name": "Daniil Sokolyuk" }
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSubCategory": "Sports",
+        "operatingSystem": "iOS 16.0 or later, Android",
+        "url": "https://sokoly.uk/bgdflasher",
+        "downloadUrl": "https://apps.apple.com/app/bgd-flasher/id0000000000",
+        "installUrl": "https://apps.apple.com/app/bgd-flasher/id0000000000",
+        "softwareVersion": "1.2.0",
+        "datePublished": "2026-03-31",
+        "author": { "@type": "Person", "name": "Daniil Sokolyuk", "url": "https://sokoly.uk" },
+        "publisher": { "@type": "Person", "name": "Daniil Sokolyuk" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+        "screenshot": [
+            "https://sokoly.uk/bgdflasher/01_dashboard.png",
+            "https://sokoly.uk/bgdflasher/02_telemetry.png",
+            "https://sokoly.uk/bgdflasher/04_bms_cells.png"
+        ],
+        "featureList": [
+            "Real-time telemetry via Bluetooth",
+            "Dual BMS cell voltage monitoring",
+            "Fullscreen speed and PWM dashboard",
+            "Firmware flashing with YMODEM protocol",
+            "Wheel settings management",
+            "No ads, no tracking, no account required"
+        ],
+        "keywords": "{{keywords}}",
+        "inLanguage": "{{html_lang}}"
+    }
+    </script>
+
+    <!-- Schema.org — FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "{{faq1_q}}",
+                "acceptedAnswer": { "@type": "Answer", "text": "{{faq1_a}}" }
+            },
+            {
+                "@type": "Question",
+                "name": "{{faq2_q}}",
+                "acceptedAnswer": { "@type": "Answer", "text": "{{faq2_a}}" }
+            },
+            {
+                "@type": "Question",
+                "name": "{{faq3_q}}",
+                "acceptedAnswer": { "@type": "Answer", "text": "{{faq3_a}}" }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org — WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "BGD Flasher",
+        "url": "https://sokoly.uk/bgdflasher",
+        "inLanguage": "{{html_lang}}"
+    }
+    </script>
+
+    <!-- Schema.org — BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sokoly.uk/" },
+            { "@type": "ListItem", "position": 2, "name": "BGD Flasher", "item": "{{canonical}}" }
+        ]
     }
     </script>
 </head>
@@ -110,6 +221,7 @@
     </div>
 
     <footer>
+        <p>{{lang_switcher}}</p>
         <p>&copy; 2026 Daniil Sokolyuk &nbsp;|&nbsp; <a href="{{prefix}}privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="{{prefix}}support">Support</a></p>
     </footer>
 
