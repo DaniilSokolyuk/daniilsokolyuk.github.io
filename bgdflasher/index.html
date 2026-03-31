@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGD Flasher — Firmware & Telemetry App for Begode, Gotway & SV Electric Unicycles</title>
+    <meta name="description" content="Flash firmware, monitor real-time telemetry, adjust settings, and track BMS cell data on your Begode, Gotway, or SV electric unicycle. Free iOS app.">
+    <meta name="keywords" content="begode, gotway, euc, electric unicycle, firmware, flasher, telemetry, bms, dashboard, speed, battery, sv, extremebull, monowheel">
+    <meta property="og:title" content="BGD Flasher — EUC Telemetry & Firmware Tool">
+    <meta property="og:description" content="Flash firmware, monitor real-time telemetry, and fine-tune your Begode, Gotway & SV electric unicycle.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sokoly.uk/bgdflasher">
+    <meta property="og:image" content="https://sokoly.uk/bgdflasher/01_dashboard.png">
+    <link rel="canonical" href="https://sokoly.uk/bgdflasher">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif; color: #f0f0f0; background: #0a0a0a; }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: radial-gradient(ellipse at 50% 0%, #1a1030 0%, #0a0a0a 70%);
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.3em;
+        }
+        .hero h1 span { color: #b388ff; }
+        .hero .subtitle {
+            font-size: 1.4em;
+            color: #999;
+            max-width: 600px;
+            margin-bottom: 2em;
+            line-height: 1.5;
+        }
+        .hero-screenshots {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin-top: 2em;
+        }
+        .hero-screenshots img {
+            height: 500px;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .badge { margin-top: 2em; }
+        .badge img { height: 54px; }
+
+        /* Sections */
+        section {
+            padding: 100px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        section h2 {
+            font-size: 2.4em;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 0.3em;
+            letter-spacing: -0.02em;
+        }
+        section .section-sub {
+            text-align: center;
+            color: #888;
+            font-size: 1.1em;
+            margin-bottom: 3em;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Feature grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .feature-card {
+            background: #141414;
+            border: 1px solid #222;
+            border-radius: 16px;
+            padding: 32px;
+        }
+        .feature-card .icon {
+            font-size: 2em;
+            margin-bottom: 16px;
+        }
+        .feature-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            color: #888;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        /* Screenshot showcase */
+        .showcase {
+            display: flex;
+            gap: 24px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 20px 0;
+            -webkit-overflow-scrolling: touch;
+        }
+        .showcase-item {
+            flex: 0 0 auto;
+            scroll-snap-align: center;
+            text-align: center;
+        }
+        .showcase-item img {
+            height: 580px;
+            border-radius: 24px;
+            box-shadow: 0 16px 48px rgba(0,0,0,0.4);
+        }
+        .showcase-item p {
+            margin-top: 16px;
+            color: #888;
+            font-size: 0.95em;
+        }
+
+        /* Compatibility */
+        .compat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .compat-card {
+            background: #141414;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+        }
+        .compat-card h3 { font-size: 1.1em; margin-bottom: 8px; }
+        .compat-card p { color: #888; font-size: 0.9em; }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            padding: 100px 20px;
+            background: radial-gradient(ellipse at 50% 100%, #1a1030 0%, #0a0a0a 70%);
+        }
+        .cta h2 { font-size: 2.4em; margin-bottom: 0.5em; }
+        .cta p { color: #888; margin-bottom: 2em; font-size: 1.1em; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #555;
+            font-size: 0.85em;
+            border-top: 1px solid #1a1a1a;
+        }
+        footer a { color: #888; text-decoration: none; }
+        footer a:hover { color: #b388ff; }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2em; }
+            .hero .subtitle { font-size: 1.1em; }
+            .hero-screenshots img { height: 360px; }
+            section h2 { font-size: 1.8em; }
+            .showcase-item img { height: 420px; }
+        }
+        @media (max-width: 480px) {
+            .hero-screenshots img { height: 280px; }
+            .showcase-item img { height: 340px; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "BGD Flasher",
+        "operatingSystem": "iOS",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "Firmware flashing, real-time telemetry, and settings management for Begode, Gotway, and SV electric unicycles.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Daniil Sokolyuk"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1><span>BGD</span> Flasher</h1>
+        <p class="subtitle">Firmware flashing, real-time telemetry, and full settings control for Begode, Gotway & SV electric unicycles.</p>
+        <div class="hero-screenshots">
+            <img src="01_dashboard.png" alt="BGD Flasher race dashboard with speed and PWM gauges" loading="lazy">
+            <img src="02_telemetry.png" alt="Real-time EUC telemetry monitoring" loading="lazy">
+            <img src="04_bms_cells.png" alt="Dual BMS cell voltage monitoring" loading="lazy">
+        </div>
+    </div>
+
+    <!-- Features -->
+    <section>
+        <h2>Everything your wheel needs</h2>
+        <p class="section-sub">Monitor, configure, and update your electric unicycle from a single app.</p>
+        <div class="features">
+            <div class="feature-card">
+                <div class="icon">&#9889;</div>
+                <h3>Real-Time Telemetry</h3>
+                <p>Live speed, voltage, current, power, PWM, temperature, trip distance, and session statistics — all streamed over Bluetooth in real time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128267;</div>
+                <h3>Dual BMS Monitoring</h3>
+                <p>Per-cell voltage for up to 48 cells across two battery packs. Track min/max/average, temperature sensors, and detect cell imbalance early.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128338;</div>
+                <h3>Race Dashboard</h3>
+                <p>Fullscreen speed and PWM gauges with dynamic color warnings. Track top speed and max PWM in immersive portrait or landscape mode.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128190;</div>
+                <h3>Firmware Flashing</h3>
+                <p>Browse the firmware catalog or load custom files. YMODEM protocol with CRC16 verification and MD5 hash validation for safe transfers.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#9881;</div>
+                <h3>Wheel Settings</h3>
+                <p>Ride mode, speed limiter, alarms, LED mode, beeper volume, roll angle, gyroscope calibration — adjust everything over Bluetooth.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128274;</div>
+                <h3>Private & Ad-Free</h3>
+                <p>No accounts, no analytics, no ads, no tracking. All data stays on your device. Open community-driven development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section>
+        <h2>See it in action</h2>
+        <p class="section-sub">Designed for riders who want full control over their wheel.</p>
+        <div class="showcase">
+            <div class="showcase-item">
+                <img src="01_dashboard.png" alt="Fullscreen race dashboard for Begode electric unicycle" loading="lazy">
+                <p>Race Dashboard</p>
+            </div>
+            <div class="showcase-item">
+                <img src="02_telemetry.png" alt="Real-time telemetry data from Begode Gotway wheel" loading="lazy">
+                <p>Live Telemetry</p>
+            </div>
+            <div class="showcase-item">
+                <img src="03_telemetry_grid.png" alt="Telemetry grid view with speed voltage power metrics" loading="lazy">
+                <p>Metrics Grid</p>
+            </div>
+            <div class="showcase-item">
+                <img src="04_bms_cells.png" alt="Dual BMS cell voltage monitor for electric unicycle battery" loading="lazy">
+                <p>BMS Cell Monitor</p>
+            </div>
+            <div class="showcase-item">
+                <img src="05_firmware_flash.png" alt="Firmware flashing interface for Begode Gotway EUC" loading="lazy">
+                <p>Flash Firmware</p>
+            </div>
+            <div class="showcase-item">
+                <img src="06_settings.png" alt="Wheel settings configuration for Begode electric unicycle" loading="lazy">
+                <p>Wheel Settings</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatibility -->
+    <section>
+        <h2>Supported wheels</h2>
+        <p class="section-sub">Works with all Begode/Gotway BLE-compatible electric unicycles.</p>
+        <div class="compat-grid">
+            <div class="compat-card">
+                <h3>Begode / Gotway</h3>
+                <p>Stock firmware</p>
+            </div>
+            <div class="compat-card">
+                <h3>ExtremeBull</h3>
+                <p>JN firmware</p>
+            </div>
+            <div class="compat-card">
+                <h3>Freestyl3r</h3>
+                <p>CF custom firmware</p>
+            </div>
+            <div class="compat-card">
+                <h3>SV / Alexovik</h3>
+                <p>BF firmware with advanced BMS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta">
+        <h2>Ready to ride?</h2>
+        <p>Download BGD Flasher for free on the App Store.</p>
+        <div class="badge">
+            <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" target="_blank" rel="noopener">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Daniil Sokolyuk &nbsp;|&nbsp; <a href="privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="support">Support</a></p>
+    </footer>
+
+</body>
+</html>
