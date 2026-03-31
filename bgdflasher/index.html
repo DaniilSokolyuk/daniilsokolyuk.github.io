@@ -24,7 +24,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 60px 20px;
+            padding: 80px 20px 60px;
             background: radial-gradient(ellipse at 50% 0%, #1a1030 0%, #0a0a0a 70%);
         }
         .hero h1 {
@@ -56,6 +56,62 @@
         }
         .badge { margin-top: 2em; }
         .badge img { height: 54px; }
+
+        /* Sticky header */
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 24px;
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .sticky-header .logo {
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+        .sticky-header .logo span { color: #b388ff; }
+        .sticky-header .dl-btn {
+            display: inline-block;
+            background: #b388ff;
+            color: #000;
+            font-weight: 600;
+            font-size: 0.85em;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .sticky-header .dl-btn:hover { background: #ce9cff; }
+        .badge-row {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .apk-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #222;
+            color: #f0f0f0;
+            font-weight: 600;
+            font-size: 0.95em;
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            border: 1px solid #333;
+            height: 54px;
+        }
+        .apk-btn:hover { background: #2a2a2a; border-color: #444; }
+        .apk-btn svg { width: 24px; height: 24px; fill: #a4c639; }
 
         /* Sections */
         section {
@@ -202,10 +258,25 @@
 </head>
 <body>
 
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="logo"><span>BGD</span> Flasher</div>
+        <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" class="dl-btn" target="_blank" rel="noopener">Download</a>
+    </header>
+
     <!-- Hero -->
     <div class="hero">
         <h1><span>BGD</span> Flasher</h1>
         <p class="subtitle">Firmware flashing, real-time telemetry, and full settings control for Begode, Gotway & SV electric unicycles.</p>
+        <div class="badge badge-row">
+            <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" target="_blank" rel="noopener">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+            <a href="BegodeFlasher-1.2.0.apk" class="apk-btn" download>
+                <svg viewBox="0 0 24 24"><path d="M17.523 2.226l1.39 2.409a.5.5 0 01-.866.5l-1.42-2.46A7.587 7.587 0 0012 1.5c-1.726 0-3.326.576-4.627 1.175L5.953 5.135a.5.5 0 01-.866-.5l1.39-2.409C3.637 3.848 1.5 6.932 1.5 10.5h21c0-3.568-2.137-6.652-4.977-8.274zM7.5 8a1 1 0 110-2 1 1 0 010 2zm9 0a1 1 0 110-2 1 1 0 010 2zM1.5 11.5v7A3.5 3.5 0 005 22h14a3.5 3.5 0 003.5-3.5v-7h-21z"/></svg>
+                Android APK
+            </a>
+        </div>
         <div class="hero-screenshots">
             <img src="01_dashboard.png" alt="BGD Flasher race dashboard with speed and PWM gauges" loading="lazy">
             <img src="02_telemetry.png" alt="Real-time EUC telemetry monitoring" loading="lazy">
@@ -315,10 +386,14 @@
     <!-- CTA -->
     <div class="cta">
         <h2>Ready to ride?</h2>
-        <p>Download BGD Flasher for free on the App Store.</p>
-        <div class="badge">
+        <p>Download BGD Flasher for free.</p>
+        <div class="badge badge-row">
             <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" target="_blank" rel="noopener">
                 <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+            <a href="BegodeFlasher-1.2.0.apk" class="apk-btn" download>
+                <svg viewBox="0 0 24 24"><path d="M17.523 2.226l1.39 2.409a.5.5 0 01-.866.5l-1.42-2.46A7.587 7.587 0 0012 1.5c-1.726 0-3.326.576-4.627 1.175L5.953 5.135a.5.5 0 01-.866-.5l1.39-2.409C3.637 3.848 1.5 6.932 1.5 10.5h21c0-3.568-2.137-6.652-4.977-8.274zM7.5 8a1 1 0 110-2 1 1 0 010 2zm9 0a1 1 0 110-2 1 1 0 010 2zM1.5 11.5v7A3.5 3.5 0 005 22h14a3.5 3.5 0 003.5-3.5v-7h-21z"/></svg>
+                Android APK
             </a>
         </div>
     </div>
