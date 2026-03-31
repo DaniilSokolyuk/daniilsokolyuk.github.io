@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BGD Flasher — Begode, Gotway ve SV Elektrikli Tek Tekerlekli için Firmware ve Telemetri</title>
-    <meta name="description" content="Firmware yükleme, gerçek zamanlı telemetri, ayarlar ve BMS hücre verileri. Begode, Gotway ve SV için. Ücretsiz uygulama.">
-    <meta name="keywords" content="begode, gotway, euc, elektrikli tek tekerlekli, firmware, telemetri, bms, gösterge paneli, hız, batarya, sv, extremebull">
-    <meta property="og:title" content="BGD Flasher — EUC Telemetri ve Firmware Aracı">
-    <meta property="og:description" content="Firmware yükleyin, gerçek zamanlı telemetri izleyin, Begode, Gotway ve SV araçlarınızı yapılandırın.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sokoly.uk/bgdflasher/tr">
-    <meta property="og:image" content="https://sokoly.uk/bgdflasher/01_dashboard.png">
+
+    <!-- Primary SEO -->
+    <title>BGD Flasher — Begode, Gotway ve SV Tek Teker için Firmware ve Telemetri Uygulaması</title>
+    <meta name="description" content="Firmware yükleme, gerçek zamanlı telemetri, ayarlar ve BMS hücre verileri. Begode, Gotway ve SV tek teker için. Ücretsiz iOS ve Android uygulaması.">
+    <meta name="keywords" content="begode,gotway,tek teker,elektrikli tek teker,firmware,telemetri,uygulama,BMS,hız,batarya,bluetooth,euc,sv,extremebull">
+    <meta name="author" content="Daniil Sokolyuk">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://sokoly.uk/bgdflasher/tr">
+
+    <!-- Language alternates -->
     <link rel="alternate" hreflang="en" href="https://sokoly.uk/bgdflasher">
     <link rel="alternate" hreflang="ru" href="https://sokoly.uk/bgdflasher/ru">
     <link rel="alternate" hreflang="de" href="https://sokoly.uk/bgdflasher/de">
@@ -24,18 +25,137 @@
     <link rel="alternate" hreflang="it" href="https://sokoly.uk/bgdflasher/it">
     <link rel="alternate" hreflang="tr" href="https://sokoly.uk/bgdflasher/tr">
     <link rel="alternate" hreflang="x-default" href="https://sokoly.uk/bgdflasher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sokoly.uk/bgdflasher/tr">
+    <meta property="og:title" content="BGD Flasher — Tek Teker Telemetri ve Firmware Aracı">
+    <meta property="og:description" content="Firmware yükleyin, gerçek zamanlı telemetri izleyin, Begode, Gotway ve SV tek tekerinizi yapılandırın.">
+    <meta property="og:image" content="https://sokoly.uk/bgdflasher/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="BGD Flasher — EUC telemetry and firmware app">
+    <meta property="og:site_name" content="BGD Flasher">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="it_IT">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sokoly.uk/bgdflasher/tr">
+    <meta name="twitter:title" content="BGD Flasher — Tek Teker Telemetri ve Firmware Aracı">
+    <meta name="twitter:description" content="Firmware yükleyin, gerçek zamanlı telemetri izleyin, Begode, Gotway ve SV tek tekerinizi yapılandırın.">
+    <meta name="twitter:image" content="https://sokoly.uk/bgdflasher/og-image.png">
+    <meta name="twitter:image:alt" content="BGD Flasher app interface">
+
+    <!-- Apple specific -->
+    <meta name="apple-mobile-web-app-title" content="BGD Flasher">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../favicon-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://apps.apple.com">
+    <link rel="dns-prefetch" href="https://apps.apple.com">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="../style.css">
+
+    <!-- Schema.org — Software Application -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "MobileApplication",
+        "@type": "SoftwareApplication",
         "name": "BGD Flasher",
-        "operatingSystem": "iOS, Android",
+        "alternateName": ["Begode Flasher", "BGD Flasher EUC", "Gotway Flasher"],
+        "description": "Firmware yükleme, gerçek zamanlı telemetri, ayarlar ve BMS hücre verileri. Begode, Gotway ve SV tek teker için. Ücretsiz iOS ve Android uygulaması.",
         "applicationCategory": "UtilitiesApplication",
-        "description": "Firmware yükleme, gerçek zamanlı telemetri, ayarlar ve BMS hücre verileri. Begode, Gotway ve SV için. Ücretsiz uygulama.",
-        "inLanguage": "tr",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "author": { "@type": "Person", "name": "Daniil Sokolyuk" }
+        "applicationSubCategory": "Sports",
+        "operatingSystem": "iOS 16.0 or later, Android",
+        "url": "https://sokoly.uk/bgdflasher",
+        "downloadUrl": "https://apps.apple.com/app/bgd-flasher/id0000000000",
+        "installUrl": "https://apps.apple.com/app/bgd-flasher/id0000000000",
+        "softwareVersion": "1.2.0",
+        "datePublished": "2026-03-31",
+        "author": { "@type": "Person", "name": "Daniil Sokolyuk", "url": "https://sokoly.uk" },
+        "publisher": { "@type": "Person", "name": "Daniil Sokolyuk" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+        "screenshot": [
+            "https://sokoly.uk/bgdflasher/01_dashboard.png",
+            "https://sokoly.uk/bgdflasher/02_telemetry.png",
+            "https://sokoly.uk/bgdflasher/04_bms_cells.png"
+        ],
+        "featureList": [
+            "Real-time telemetry via Bluetooth",
+            "Dual BMS cell voltage monitoring",
+            "Fullscreen speed and PWM dashboard",
+            "Firmware flashing with YMODEM protocol",
+            "Wheel settings management",
+            "No ads, no tracking, no account required"
+        ],
+        "keywords": "begode,gotway,tek teker,elektrikli tek teker,firmware,telemetri,uygulama,BMS,hız,batarya,bluetooth,euc,sv,extremebull",
+        "inLanguage": "tr"
+    }
+    </script>
+
+    <!-- Schema.org — FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "BGD Flasher ücretsiz mi?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Evet, BGD Flasher tamamen ücretsizdir — reklam yok, uygulama içi satın alma yok, izleme yok." }
+            },
+            {
+                "@type": "Question",
+                "name": "Hangi tek tekerler destekleniyor?",
+                "acceptedAnswer": { "@type": "Answer", "text": "BLE uyumlu tüm Begode, Gotway, ExtremeBull, Freestyl3r ve SV/Alexovik tek tekerler." }
+            },
+            {
+                "@type": "Question",
+                "name": "Firmware yüklemek güvenli mi?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Evet. BGD Flasher, güvenli firmware aktarımları için CRC16 sağlama toplamları ve MD5 hash doğrulaması ile YMODEM protokolünü kullanır." }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org — WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "BGD Flasher",
+        "url": "https://sokoly.uk/bgdflasher",
+        "inLanguage": "tr"
+    }
+    </script>
+
+    <!-- Schema.org — BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sokoly.uk/" },
+            { "@type": "ListItem", "position": 2, "name": "BGD Flasher", "item": "https://sokoly.uk/bgdflasher/tr" }
+        ]
     }
     </script>
 </head>
@@ -47,7 +167,7 @@
 
     <div class="hero">
         <h1><span>BGD</span> Flasher</h1>
-        <p class="subtitle">Firmware yükleme, gerçek zamanlı telemetri ve Begode, Gotway & SV elektrikli tek tekerlekli araçlar için tam ayar kontrolü.</p>
+        <p class="subtitle">Firmware yükleme, gerçek zamanlı telemetri ve Begode, Gotway & SV tek tekerler için tam ayar kontrolü.</p>
         <div class="badge badge-row" id="hero-badges">
             <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" target="_blank" rel="noopener">
                 <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
@@ -65,21 +185,21 @@
     </div>
 
     <section>
-        <h2>Tekerleğinizin ihtiyacı olan her şey</h2>
-        <p class="section-sub">Tek bir uygulamadan elektrikli tek tekerleğinizi izleyin, yapılandırın ve güncelleyin.</p>
+        <h2>Tek tekerinizin ihtiyacı olan her şey</h2>
+        <p class="section-sub">Tek bir uygulamadan tek tekerinizi izleyin, yapılandırın ve güncelleyin.</p>
         <div class="features">
             <div class="feature-card"><div class="icon">&#9889;</div><h3>Gerçek zamanlı telemetri</h3><p>Hız, voltaj, akım, güç, PWM, sıcaklık, mesafe ve oturum istatistikleri — Bluetooth ile canlı.</p></div>
             <div class="feature-card"><div class="icon">&#128267;</div><h3>Çift BMS izleme</h3><p>İki batarya paketinde 48 hücreye kadar hücre voltajı. Min/maks/ortalama, sıcaklık sensörleri ve dengesizlik erken tespiti.</p></div>
             <div class="feature-card"><div class="icon">&#128338;</div><h3>Yarış gösterge paneli</h3><p>Dinamik renk uyarıları ile tam ekran hız ve PWM göstergeleri. Maksimum hız ve PWM takibi.</p></div>
             <div class="feature-card"><div class="icon">&#128190;</div><h3>Firmware yükleme</h3><p>Firmware kataloğuna göz atın veya özel dosyalar yükleyin. CRC16 ve MD5 doğrulama ile YMODEM protokolü.</p></div>
-            <div class="feature-card"><div class="icon">&#9881;</div><h3>Tekerlek ayarları</h3><p>Sürüş modu, hız sınırlayıcı, alarmlar, LED, bip sesi, eğim açısı, jiroskop kalibrasyonu — hepsi Bluetooth ile.</p></div>
+            <div class="feature-card"><div class="icon">&#9881;</div><h3>Tek teker ayarları</h3><p>Sürüş modu, hız sınırlayıcı, alarmlar, LED, bip sesi, eğim açısı, jiroskop kalibrasyonu — hepsi Bluetooth ile.</p></div>
             <div class="feature-card"><div class="icon">&#128274;</div><h3>Gizli ve reklamsız</h3><p>Hesap yok, analitik yok, reklam yok, izleme yok. Tüm veriler cihazınızda kalır.</p></div>
         </div>
     </section>
 
     <section>
         <h2>Çalışırken görün</h2>
-        <p class="section-sub">Tekerlekleri üzerinde tam kontrol isteyen sürücüler için tasarlandı.</p>
+        <p class="section-sub">Tek tekerleri üzerinde tam kontrol isteyen sürücüler için tasarlandı.</p>
         <div style="display:flex;justify-content:center;margin-bottom:3em;">
             <video autoplay muted loop playsinline style="height:580px;border-radius:24px;box-shadow:0 16px 48px rgba(0,0,0,0.4);">
                 <source src="../preview.mp4" type="video/mp4">
@@ -96,8 +216,8 @@
     </section>
 
     <section>
-        <h2>Desteklenen tekerlekler</h2>
-        <p class="section-sub">Tüm BLE uyumlu Begode/Gotway elektrikli tek tekerlekli araçlarla çalışır.</p>
+        <h2>Desteklenen tek tekerler</h2>
+        <p class="section-sub">Tüm BLE uyumlu Begode/Gotway tek tekerlerle çalışır.</p>
         <div class="compat-grid">
             <div class="compat-card"><h3>Begode / Gotway</h3><p>Stok firmware</p></div>
             <div class="compat-card"><h3>ExtremeBull</h3><p>JN firmware</p></div>
@@ -121,6 +241,7 @@
     </div>
 
     <footer>
+        <p><a href="https://sokoly.uk/bgdflasher">English</a> | <a href="https://sokoly.uk/bgdflasher/ru">Русский</a> | <a href="https://sokoly.uk/bgdflasher/de">Deutsch</a> | <a href="https://sokoly.uk/bgdflasher/fr">Français</a> | <a href="https://sokoly.uk/bgdflasher/es">Español</a> | <a href="https://sokoly.uk/bgdflasher/pt">Português</a> | <a href="https://sokoly.uk/bgdflasher/zh">中文</a> | <a href="https://sokoly.uk/bgdflasher/ja">日本語</a> | <a href="https://sokoly.uk/bgdflasher/ko">한국어</a> | <a href="https://sokoly.uk/bgdflasher/it">Italiano</a> | <strong>Türkçe</strong></p>
         <p>&copy; 2026 Daniil Sokolyuk &nbsp;|&nbsp; <a href="../privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="../support">Support</a></p>
     </footer>
 

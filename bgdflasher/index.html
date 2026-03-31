@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
     <title>BGD Flasher — Firmware & Telemetry App for Begode, Gotway & SV Electric Unicycles</title>
-    <meta name="description" content="Flash firmware, monitor real-time telemetry, adjust settings, and track BMS cell data on your Begode, Gotway, or SV electric unicycle. Free iOS app.">
-    <meta name="keywords" content="begode, gotway, euc, electric unicycle, firmware, flasher, telemetry, bms, dashboard, speed, battery, sv, extremebull, monowheel">
-    <meta property="og:title" content="BGD Flasher — EUC Telemetry & Firmware Tool">
-    <meta property="og:description" content="Flash firmware, monitor real-time telemetry, and fine-tune your Begode, Gotway & SV electric unicycle.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sokoly.uk/bgdflasher">
-    <meta property="og:image" content="https://sokoly.uk/bgdflasher/01_dashboard.png">
+    <meta name="description" content="Flash firmware, monitor real-time telemetry, adjust settings, and track BMS cell data on your Begode, Gotway, or SV electric unicycle. Free iOS & Android app.">
+    <meta name="keywords" content="begode,gotway,euc,electric unicycle,firmware,flasher,telemetry,bms,dashboard,speed,battery,sv,extremebull,monowheel,wheellog">
+    <meta name="author" content="Daniil Sokolyuk">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://sokoly.uk/bgdflasher">
+
+    <!-- Language alternates -->
     <link rel="alternate" hreflang="en" href="https://sokoly.uk/bgdflasher">
     <link rel="alternate" hreflang="ru" href="https://sokoly.uk/bgdflasher/ru">
     <link rel="alternate" hreflang="de" href="https://sokoly.uk/bgdflasher/de">
@@ -24,18 +25,137 @@
     <link rel="alternate" hreflang="it" href="https://sokoly.uk/bgdflasher/it">
     <link rel="alternate" hreflang="tr" href="https://sokoly.uk/bgdflasher/tr">
     <link rel="alternate" hreflang="x-default" href="https://sokoly.uk/bgdflasher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sokoly.uk/bgdflasher">
+    <meta property="og:title" content="BGD Flasher — EUC Telemetry & Firmware Tool">
+    <meta property="og:description" content="Flash firmware, monitor real-time telemetry, and fine-tune your Begode, Gotway & SV electric unicycle.">
+    <meta property="og:image" content="https://sokoly.uk/bgdflasher/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="BGD Flasher — EUC telemetry and firmware app">
+    <meta property="og:site_name" content="BGD Flasher">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="tr_TR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sokoly.uk/bgdflasher">
+    <meta name="twitter:title" content="BGD Flasher — EUC Telemetry & Firmware Tool">
+    <meta name="twitter:description" content="Flash firmware, monitor real-time telemetry, and fine-tune your Begode, Gotway & SV electric unicycle.">
+    <meta name="twitter:image" content="https://sokoly.uk/bgdflasher/og-image.png">
+    <meta name="twitter:image:alt" content="BGD Flasher app interface">
+
+    <!-- Apple specific -->
+    <meta name="apple-mobile-web-app-title" content="BGD Flasher">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://apps.apple.com">
+    <link rel="dns-prefetch" href="https://apps.apple.com">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org — Software Application -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "MobileApplication",
+        "@type": "SoftwareApplication",
         "name": "BGD Flasher",
-        "operatingSystem": "iOS, Android",
+        "alternateName": ["Begode Flasher", "BGD Flasher EUC", "Gotway Flasher"],
+        "description": "Flash firmware, monitor real-time telemetry, adjust settings, and track BMS cell data on your Begode, Gotway, or SV electric unicycle. Free iOS & Android app.",
         "applicationCategory": "UtilitiesApplication",
-        "description": "Flash firmware, monitor real-time telemetry, adjust settings, and track BMS cell data on your Begode, Gotway, or SV electric unicycle. Free iOS app.",
-        "inLanguage": "en",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "author": { "@type": "Person", "name": "Daniil Sokolyuk" }
+        "applicationSubCategory": "Sports",
+        "operatingSystem": "iOS 16.0 or later, Android",
+        "url": "https://sokoly.uk/bgdflasher",
+        "downloadUrl": "https://apps.apple.com/app/bgd-flasher/id0000000000",
+        "installUrl": "https://apps.apple.com/app/bgd-flasher/id0000000000",
+        "softwareVersion": "1.2.0",
+        "datePublished": "2026-03-31",
+        "author": { "@type": "Person", "name": "Daniil Sokolyuk", "url": "https://sokoly.uk" },
+        "publisher": { "@type": "Person", "name": "Daniil Sokolyuk" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+        "screenshot": [
+            "https://sokoly.uk/bgdflasher/01_dashboard.png",
+            "https://sokoly.uk/bgdflasher/02_telemetry.png",
+            "https://sokoly.uk/bgdflasher/04_bms_cells.png"
+        ],
+        "featureList": [
+            "Real-time telemetry via Bluetooth",
+            "Dual BMS cell voltage monitoring",
+            "Fullscreen speed and PWM dashboard",
+            "Firmware flashing with YMODEM protocol",
+            "Wheel settings management",
+            "No ads, no tracking, no account required"
+        ],
+        "keywords": "begode,gotway,euc,electric unicycle,firmware,flasher,telemetry,bms,dashboard,speed,battery,sv,extremebull,monowheel,wheellog",
+        "inLanguage": "en"
+    }
+    </script>
+
+    <!-- Schema.org — FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is BGD Flasher free?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes, BGD Flasher is completely free — no ads, no in-app purchases, no tracking." }
+            },
+            {
+                "@type": "Question",
+                "name": "Which wheels are supported?",
+                "acceptedAnswer": { "@type": "Answer", "text": "All Begode, Gotway, ExtremeBull, Freestyl3r, and SV/Alexovik BLE-compatible electric unicycles." }
+            },
+            {
+                "@type": "Question",
+                "name": "Is it safe to flash firmware?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. BGD Flasher uses the YMODEM protocol with CRC16 checksums and MD5 hash verification to ensure safe, reliable firmware transfers." }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org — WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "BGD Flasher",
+        "url": "https://sokoly.uk/bgdflasher",
+        "inLanguage": "en"
+    }
+    </script>
+
+    <!-- Schema.org — BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sokoly.uk/" },
+            { "@type": "ListItem", "position": 2, "name": "BGD Flasher", "item": "https://sokoly.uk/bgdflasher" }
+        ]
     }
     </script>
 </head>
@@ -121,6 +241,7 @@
     </div>
 
     <footer>
+        <p><strong>English</strong> | <a href="https://sokoly.uk/bgdflasher/ru">Русский</a> | <a href="https://sokoly.uk/bgdflasher/de">Deutsch</a> | <a href="https://sokoly.uk/bgdflasher/fr">Français</a> | <a href="https://sokoly.uk/bgdflasher/es">Español</a> | <a href="https://sokoly.uk/bgdflasher/pt">Português</a> | <a href="https://sokoly.uk/bgdflasher/zh">中文</a> | <a href="https://sokoly.uk/bgdflasher/ja">日本語</a> | <a href="https://sokoly.uk/bgdflasher/ko">한국어</a> | <a href="https://sokoly.uk/bgdflasher/it">Italiano</a> | <a href="https://sokoly.uk/bgdflasher/tr">Türkçe</a></p>
         <p>&copy; 2026 Daniil Sokolyuk &nbsp;|&nbsp; <a href="privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="support">Support</a></p>
     </footer>
 

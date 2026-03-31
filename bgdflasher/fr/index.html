@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BGD Flasher — Firmware et télémétrie pour monoroues Begode, Gotway et SV</title>
-    <meta name="description" content="Flasher le firmware, télémétrie en temps réel, réglages et données BMS pour monoroues Begode, Gotway et SV. Application gratuite.">
-    <meta name="keywords" content="begode, gotway, euc, monoroue, roue électrique, firmware, télémétrie, bms, tableau de bord, vitesse, batterie, sv, extremebull">
-    <meta property="og:title" content="BGD Flasher — Télémétrie et firmware pour monoroues">
-    <meta property="og:description" content="Flashez le firmware, surveillez la télémétrie et configurez votre monoroue Begode, Gotway ou SV.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sokoly.uk/bgdflasher/fr">
-    <meta property="og:image" content="https://sokoly.uk/bgdflasher/01_dashboard.png">
+
+    <!-- Primary SEO -->
+    <title>BGD Flasher — Firmware et télémétrie pour gyroroues Begode, Gotway et SV</title>
+    <meta name="description" content="Flasher le firmware, télémétrie en temps réel, réglages et données BMS pour gyroroues Begode, Gotway et SV. Application gratuite iOS et Android.">
+    <meta name="keywords" content="gyroroue,monoroue,begode,gotway,firmware,telemetrie,bms,batterie,vitesse,application,euc,roue,débridage,sv,extremebull">
+    <meta name="author" content="Daniil Sokolyuk">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://sokoly.uk/bgdflasher/fr">
+
+    <!-- Language alternates -->
     <link rel="alternate" hreflang="en" href="https://sokoly.uk/bgdflasher">
     <link rel="alternate" hreflang="ru" href="https://sokoly.uk/bgdflasher/ru">
     <link rel="alternate" hreflang="de" href="https://sokoly.uk/bgdflasher/de">
@@ -24,18 +25,137 @@
     <link rel="alternate" hreflang="it" href="https://sokoly.uk/bgdflasher/it">
     <link rel="alternate" hreflang="tr" href="https://sokoly.uk/bgdflasher/tr">
     <link rel="alternate" hreflang="x-default" href="https://sokoly.uk/bgdflasher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sokoly.uk/bgdflasher/fr">
+    <meta property="og:title" content="BGD Flasher — Télémétrie et firmware pour gyroroues">
+    <meta property="og:description" content="Flashez le firmware, surveillez la télémétrie et configurez votre gyroroue Begode, Gotway ou SV.">
+    <meta property="og:image" content="https://sokoly.uk/bgdflasher/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="BGD Flasher — EUC telemetry and firmware app">
+    <meta property="og:site_name" content="BGD Flasher">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="tr_TR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sokoly.uk/bgdflasher/fr">
+    <meta name="twitter:title" content="BGD Flasher — Télémétrie et firmware pour gyroroues">
+    <meta name="twitter:description" content="Flashez le firmware, surveillez la télémétrie et configurez votre gyroroue Begode, Gotway ou SV.">
+    <meta name="twitter:image" content="https://sokoly.uk/bgdflasher/og-image.png">
+    <meta name="twitter:image:alt" content="BGD Flasher app interface">
+
+    <!-- Apple specific -->
+    <meta name="apple-mobile-web-app-title" content="BGD Flasher">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../favicon-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://apps.apple.com">
+    <link rel="dns-prefetch" href="https://apps.apple.com">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="../style.css">
+
+    <!-- Schema.org — Software Application -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "MobileApplication",
+        "@type": "SoftwareApplication",
         "name": "BGD Flasher",
-        "operatingSystem": "iOS, Android",
+        "alternateName": ["Begode Flasher", "BGD Flasher EUC", "Gotway Flasher"],
+        "description": "Flasher le firmware, télémétrie en temps réel, réglages et données BMS pour gyroroues Begode, Gotway et SV. Application gratuite iOS et Android.",
         "applicationCategory": "UtilitiesApplication",
-        "description": "Flasher le firmware, télémétrie en temps réel, réglages et données BMS pour monoroues Begode, Gotway et SV. Application gratuite.",
-        "inLanguage": "fr",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "author": { "@type": "Person", "name": "Daniil Sokolyuk" }
+        "applicationSubCategory": "Sports",
+        "operatingSystem": "iOS 16.0 or later, Android",
+        "url": "https://sokoly.uk/bgdflasher",
+        "downloadUrl": "https://apps.apple.com/app/bgd-flasher/id0000000000",
+        "installUrl": "https://apps.apple.com/app/bgd-flasher/id0000000000",
+        "softwareVersion": "1.2.0",
+        "datePublished": "2026-03-31",
+        "author": { "@type": "Person", "name": "Daniil Sokolyuk", "url": "https://sokoly.uk" },
+        "publisher": { "@type": "Person", "name": "Daniil Sokolyuk" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+        "screenshot": [
+            "https://sokoly.uk/bgdflasher/01_dashboard.png",
+            "https://sokoly.uk/bgdflasher/02_telemetry.png",
+            "https://sokoly.uk/bgdflasher/04_bms_cells.png"
+        ],
+        "featureList": [
+            "Real-time telemetry via Bluetooth",
+            "Dual BMS cell voltage monitoring",
+            "Fullscreen speed and PWM dashboard",
+            "Firmware flashing with YMODEM protocol",
+            "Wheel settings management",
+            "No ads, no tracking, no account required"
+        ],
+        "keywords": "gyroroue,monoroue,begode,gotway,firmware,telemetrie,bms,batterie,vitesse,application,euc,roue,débridage,sv,extremebull",
+        "inLanguage": "fr"
+    }
+    </script>
+
+    <!-- Schema.org — FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "BGD Flasher est-il gratuit ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Oui, BGD Flasher est entièrement gratuit — sans publicité, sans achats intégrés, sans tracking." }
+            },
+            {
+                "@type": "Question",
+                "name": "Quelles gyroroues sont supportées ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Toutes les gyroroues compatibles BLE : Begode, Gotway, ExtremeBull, Freestyl3r et SV/Alexovik." }
+            },
+            {
+                "@type": "Question",
+                "name": "Est-ce sécurisé de flasher le firmware ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Oui. BGD Flasher utilise le protocole YMODEM avec des sommes de contrôle CRC16 et une vérification de hachage MD5 pour des transferts sûrs." }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org — WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "BGD Flasher",
+        "url": "https://sokoly.uk/bgdflasher",
+        "inLanguage": "fr"
+    }
+    </script>
+
+    <!-- Schema.org — BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sokoly.uk/" },
+            { "@type": "ListItem", "position": 2, "name": "BGD Flasher", "item": "https://sokoly.uk/bgdflasher/fr" }
+        ]
     }
     </script>
 </head>
@@ -47,7 +167,7 @@
 
     <div class="hero">
         <h1><span>BGD</span> Flasher</h1>
-        <p class="subtitle">Flash de firmware, télémétrie en temps réel et contrôle complet des réglages pour monoroues Begode, Gotway et SV.</p>
+        <p class="subtitle">Flash de firmware, télémétrie en temps réel et contrôle complet des réglages pour gyroroues Begode, Gotway et SV.</p>
         <div class="badge badge-row" id="hero-badges">
             <a href="https://apps.apple.com/app/bgd-flasher/id0000000000" target="_blank" rel="noopener">
                 <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
@@ -65,21 +185,21 @@
     </div>
 
     <section>
-        <h2>Tout ce dont votre roue a besoin</h2>
-        <p class="section-sub">Surveillez, configurez et mettez à jour votre monoroue depuis une seule application.</p>
+        <h2>Tout ce dont votre gyroroue a besoin</h2>
+        <p class="section-sub">Surveillez, configurez et mettez à jour votre gyroroue depuis une seule application.</p>
         <div class="features">
             <div class="feature-card"><div class="icon">&#9889;</div><h3>Télémétrie en temps réel</h3><p>Vitesse, tension, courant, puissance, PWM, température, distance et statistiques de session — le tout en direct via Bluetooth.</p></div>
             <div class="feature-card"><div class="icon">&#128267;</div><h3>Surveillance double BMS</h3><p>Tension par cellule pour jusqu'à 48 cellules sur deux packs batterie. Min/max/moyenne, capteurs de température et détection précoce de déséquilibre.</p></div>
             <div class="feature-card"><div class="icon">&#128338;</div><h3>Tableau de bord course</h3><p>Jauges de vitesse et PWM plein écran avec avertissements de couleur dynamiques. Suivi de la vitesse max et du PWM max.</p></div>
             <div class="feature-card"><div class="icon">&#128190;</div><h3>Flash de firmware</h3><p>Parcourez le catalogue de firmwares ou chargez vos fichiers. Protocole YMODEM avec vérification CRC16 et validation MD5.</p></div>
-            <div class="feature-card"><div class="icon">&#9881;</div><h3>Réglages de la roue</h3><p>Mode de conduite, limiteur de vitesse, alarmes, LED, volume du bip, angle d'inclinaison, calibration du gyroscope — tout via Bluetooth.</p></div>
+            <div class="feature-card"><div class="icon">&#9881;</div><h3>Réglages de la gyroroue</h3><p>Mode de conduite, limiteur de vitesse, alarmes, LED, volume du bip, angle d'inclinaison, calibration du gyroscope — tout via Bluetooth.</p></div>
             <div class="feature-card"><div class="icon">&#128274;</div><h3>Privé et sans publicité</h3><p>Pas de comptes, pas d'analytics, pas de pubs, pas de tracking. Toutes les données restent sur votre appareil.</p></div>
         </div>
     </section>
 
     <section>
         <h2>Voir en action</h2>
-        <p class="section-sub">Conçu pour les riders qui veulent un contrôle total sur leur roue.</p>
+        <p class="section-sub">Conçu pour les riders qui veulent un contrôle total sur leur gyroroue.</p>
         <div style="display:flex;justify-content:center;margin-bottom:3em;">
             <video autoplay muted loop playsinline style="height:580px;border-radius:24px;box-shadow:0 16px 48px rgba(0,0,0,0.4);">
                 <source src="../preview.mp4" type="video/mp4">
@@ -96,8 +216,8 @@
     </section>
 
     <section>
-        <h2>Roues supportées</h2>
-        <p class="section-sub">Compatible avec toutes les monoroues Begode/Gotway BLE.</p>
+        <h2>Gyroroues supportées</h2>
+        <p class="section-sub">Compatible avec toutes les gyroroues Begode/Gotway BLE.</p>
         <div class="compat-grid">
             <div class="compat-card"><h3>Begode / Gotway</h3><p>Firmware stock</p></div>
             <div class="compat-card"><h3>ExtremeBull</h3><p>Firmware JN</p></div>
@@ -121,6 +241,7 @@
     </div>
 
     <footer>
+        <p><a href="https://sokoly.uk/bgdflasher">English</a> | <a href="https://sokoly.uk/bgdflasher/ru">Русский</a> | <a href="https://sokoly.uk/bgdflasher/de">Deutsch</a> | <strong>Français</strong> | <a href="https://sokoly.uk/bgdflasher/es">Español</a> | <a href="https://sokoly.uk/bgdflasher/pt">Português</a> | <a href="https://sokoly.uk/bgdflasher/zh">中文</a> | <a href="https://sokoly.uk/bgdflasher/ja">日本語</a> | <a href="https://sokoly.uk/bgdflasher/ko">한국어</a> | <a href="https://sokoly.uk/bgdflasher/it">Italiano</a> | <a href="https://sokoly.uk/bgdflasher/tr">Türkçe</a></p>
         <p>&copy; 2026 Daniil Sokolyuk &nbsp;|&nbsp; <a href="../privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="../support">Support</a></p>
     </footer>
 
